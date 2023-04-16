@@ -21,6 +21,7 @@ const Sidebar = () => {
     { title: "Home", link: "/", icon: "faHouse" },
     { title: "ChatGPT", link: "/chatgpt", icon: "faMessage" },
     { title: "Dall·E", link: "/dall-e", icon: "faImages" },
+    { title: "AIM", link: "/aim", icon: "faBarChart" },
     { title: "Dash", link: "/dash", icon: "faBolt" },
     { title: "NFTs", link: "/nfts", icon: "faImages" },
     { title: "Trade", link: "/trade", icon: "faExchange" },

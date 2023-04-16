@@ -12,6 +12,7 @@ import Trade from "./components/Trade/main.trade";
 import NFTS from "./components/NFTS/main.nfts";
 import Charts from "./components/Charts/main.charts";
 import Demo from "./components/Demo/main.demo";
+import AIM from "./components/AIM/main.aim";
 
 
 
@@ -55,7 +56,7 @@ const App = () => {
                 }
               />
               <Route path="/dash" element={<Dash />} />
-
+              <Route path="/aim" element={<AIM />} />
               <Route path="/nfts" element={<NFTS />} />
               <Route path="/charts" element={<Charts />} />
               <Route path="/trade" element={<Trade />} />
