@@ -7,6 +7,8 @@ import {
   faQuestionCircle,
   faHouse,
   faVideo,
+  faExchange,
+  faBarChart,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
@@ -18,12 +20,20 @@ const Sidebar = () => {
     { title: "Home", link: "/", icon: "faHouse" },
     { title: "ChatGPT", link: "/chatgpt", icon: "faMessage" },
     { title: "Dall·E", link: "/dall-e", icon: "faImages" },
+    { title: "Dash", link: "/dash", icon: "faImages" },
+    { title: "NFTs", link: "/nfts", icon: "faImages" },
+    { title: "Trade", link: "/trade", icon: "faExchange" },
+    { title: "Charts", link: "/charts", icon: "faBarChart" },
     { title: "FAQs", link: "/question", icon: "faQuestionCircle" },
     { title: "Demo", link: "/demo", icon: "faVideo" },
   ];
 
   const handleIcon = (icon) => {
     switch (icon) {
+      case "faBarChart":
+        return faBarChart;
+      case "faExchange":
+        return faExchange;
       case "faMessage":
         return faMessage;
       case "faImages":
@@ -73,7 +83,7 @@ const Sidebar = () => {
             !open && "scale-0"
           }`}
         >
-          <h1 style={{ font: "charter" }}>OpenAI</h1>
+          <h1 style={{ font: "charter" }}>MAI Dashboad</h1>
         </div>
       </div>
       <ul className="pt-6">

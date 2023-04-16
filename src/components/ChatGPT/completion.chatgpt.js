@@ -9,7 +9,7 @@ const Completion = () => {
   const [chatLog, setChatLog] = useState([
     {
       user: "gpt",
-      message: "How can I help you Today?",
+      message: "Meoww.. sup fam?",
       avatar: "openai-dark.png",
     },
     // {
@@ -34,7 +34,7 @@ const Completion = () => {
       prompt: prompt,
       model: "text-davinci-003",
       temperature: 0.9,
-      max_tokens: 2048,
+      max_tokens: 4097,
     });
     setLoading(false);
     setChatLog([
@@ -56,7 +56,7 @@ const Completion = () => {
             |
 
           */}
-         
+
 
           {chatLog.map((log, i) => (
             <>
@@ -93,7 +93,7 @@ const Completion = () => {
                 </div>
               )}
             </>
-          ))} 
+          ))}
           {loading && (
             <div className="relative">
               <div

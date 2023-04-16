@@ -7,10 +7,19 @@ import { Sidebar } from "./components/Layouts/sidebar.layouts";
 import Octocat from "./components/Utilities/octocat";
 import Home from "./components/Home/main.home";
 import FAQ from "./components/FAQ/main.faq";
+import Dash from "./components/Dash/main.dash";
+import Trade from "./components/Trade/main.trade";
+import NFTS from "./components/NFTS/main.nfts";
+import Charts from "./components/Charts/main.charts";
 import Demo from "./components/Demo/main.demo";
+
+
+
+
 
 const App = () => {
   return (
+
     <MainLayouts>
       <BrowserRouter>
         <Octocat />
@@ -22,8 +31,8 @@ const App = () => {
                 path="/"
                 element={
                   <Home
-                    title="Let's do something fun with AI."
-                    description="OpenAI is an AI research and deployment company. Our mission is to ensure that artificial general intelligence benefits all of humanity."
+                    title="MAI AI Powered Dashboard."
+                    description="Melo Ai is your ultimate powered AI dashboard bringing you an enhanced expierence at web3 and 4."
                   />
                 }
               />
@@ -45,6 +54,11 @@ const App = () => {
                   />
                 }
               />
+              <Route path="/dash" element={<Dash />} />
+
+              <Route path="/nfts" element={<NFTS />} />
+              <Route path="/charts" element={<Charts />} />
+              <Route path="/trade" element={<Trade />} />
               <Route path="/question" element={<FAQ />} />
               <Route path="/demo" element={<Demo />} />
             </Routes>
@@ -52,6 +66,7 @@ const App = () => {
         </div>
       </BrowserRouter>
     </MainLayouts>
+
   );
 };
 

@@ -8,31 +8,31 @@ const FAQ = () => {
       question: "What can this website do?",
       li: false,
       answer:
-        "This website allows us to communicate with AI created by the OpenAI organization",
+        "This website allows us to communicate with MAI AI and interact with the user dashboard",
       color: "#D0E2DB",
     },
     {
-      question: "What can AI do on this website?",
+      question: "What can MAI do on this website?",
       li: true,
       answer: [
-        { list_answer: "ChatGPT - Interacts with AI in a conversational way." },
+        { list_answer: "MAI ChatGPT - Interacts with AI in a conversational way." },
         {
           list_answer:
-            "Dall·E 2 - Create original, realistic images and art from a text description",
+            "ME MAI - Create original, realistic images and art from a text description",
         },
       ],
       color: "#8BD3DD",
     },
     {
-      question: "What technology is used on this website?",
+      question: "",
       li: false,
-      answer: "This website is built using ReactJS, Tailwind CSS, OpenAI API",
+      answer: "",
       color: "#FAAE2B",
     },
     {
-      question: "How to Get API Key?",
+      question: "",
       answer:
-        "You must first register on the openai website, then click the profile menu and select View API keys",
+        "",
       color: "#FE98A3",
     },
   ];

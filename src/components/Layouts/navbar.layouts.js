@@ -10,7 +10,7 @@ const Navigation = () => {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <a href="/">
               <h2 className="text-2xl font-bold text-black dark:text-white">
-                OpenAI
+                MAI
               </h2>
             </a>
             <div className="md:hidden">
@@ -59,7 +59,7 @@ const Navigation = () => {
           >
             <ul className="items-center justify-center space-y-4 md:flex md:space-x-6 md:space-y-0">
               <li className="text-black dark:text-white">
-                <a href="/">ChatGPT</a>
+                <a href="/">MAI ChatGPT</a>
               </li>
               <li className="text-black dark:text-white">
                 <a href="/dall-e">Dall-E</a>
