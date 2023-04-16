@@ -2,24 +2,51 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperclip } from "@fortawesome/free-solid-svg-icons";
 
-const trade = () => {
-    return (
+const Trade = () => {
+  const headingStyle = {
+    fontSize: "2rem", // Add your desired font size here
+  };
 
+  return (
+    <div>
+      <h1 style={headingStyle}>How To Swap on Voltichange And Auto burn every Transaction</h1>
+      <br />
+      <h2>Connect Wallet with BNB Funds</h2>
+      <div>
+        <br />
+      <h2>Update Slippage in settings to 1% & turn Compatability mode ON</h2>
+      </div>
+      <br />
+      <div>
+      <h2>Swap Your Desired Amount and burn 🔥</h2>
+      </div>
+      <br />
+      <div className="flex">
+        <div className="w-1/2">
+          <link rel="stylesheet" href="https://voltichange.net/css/widget.css" />
+          <iframe
+            src="https://voltichange.net/api/widget/?chain=56&darktheme=false&tokenin=Native&tokenout=0x5c12C812794B874fe4Fdea9A4960df599C89b8E5&slippage=0.5"
+            frameBorder="0"
+            width="400"
+            height="650"
+          ></iframe>
+        </div>
 
-            <div className="flex flex-wrap">
-              <div className="w-1/2">
+        <div className="w-1/2">
+        <h1 style={headingStyle}>How to Swap MELO On Voltichange</h1>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/meloinu/embed/dQw4w9WgXcQ"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-                <iframe width="450" height="540" frameBorder="0" scrolling="no" src="https://coinbrain.com/embed/trade?theme=custom&accent=38e907&background=ffffff&padding=16&chainId=56&inputAddress=0x5c12c812794b874fe4fdea9a4960df599c89b8e5"></iframe>
-                <br/>
-              </div>
-              <div>
-                <img src="/OIG.jpg" alt="" />
-              </div>
-              <div className="w-1/2">
-              <iframe width="450" height="540" frameBorder="0" scrolling="no" src="https://coinbrain.com/embed/trade?theme=custom&accent=fd1235&background=ffffff&padding=16&chainId=56&inputAddress=0xc42a67c3d7d5e387168b72ccc555ee61838c7e33"></iframe>
-              </div>
-              </div>
-    )
-  }
-
-  export default trade;
+export default Trade;
