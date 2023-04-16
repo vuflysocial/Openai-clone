@@ -1,7 +1,7 @@
 const Octocat = () => {
   return (
     <a
-      href="https://github.com/armandwipangestu/openai-project"
+      href=""
       className="github-corner"
       tabIndex="-1"
       target="_blank"

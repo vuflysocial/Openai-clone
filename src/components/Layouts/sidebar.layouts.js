@@ -9,6 +9,7 @@ import {
   faVideo,
   faExchange,
   faBarChart,
+  faBolt,
 } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 
@@ -20,7 +21,7 @@ const Sidebar = () => {
     { title: "Home", link: "/", icon: "faHouse" },
     { title: "ChatGPT", link: "/chatgpt", icon: "faMessage" },
     { title: "Dall·E", link: "/dall-e", icon: "faImages" },
-    { title: "Dash", link: "/dash", icon: "faImages" },
+    { title: "Dash", link: "/dash", icon: "faBolt" },
     { title: "NFTs", link: "/nfts", icon: "faImages" },
     { title: "Trade", link: "/trade", icon: "faExchange" },
     { title: "Charts", link: "/charts", icon: "faBarChart" },
@@ -32,6 +33,8 @@ const Sidebar = () => {
     switch (icon) {
       case "faBarChart":
         return faBarChart;
+      case "faBolt":
+        return faBolt;
       case "faExchange":
         return faExchange;
       case "faMessage":
